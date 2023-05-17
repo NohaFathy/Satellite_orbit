@@ -18,9 +18,9 @@ dt=1
 
 while t<10000:
       rate(400)
-        r=sat.pos-Earth.pos
-          F=-G*Earth.m*sat.m*norm(r)/mag(r)**2
-            sat.p=sat.p+F*dt
-              sat.pos=sat.pos+sat.p*dt/sat.m
-                t=t+dt
+      r=sat.pos-Earth.pos
+      F=-G*Earth.m*sat.m*norm(r)/mag(r)**2
+      sat.p=sat.p+F*dt
+      sat.pos=sat.pos+sat.p*dt/sat.m
+      t=t+dt
             
